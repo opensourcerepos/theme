@@ -1,0 +1,7 @@
+.article{
+  margin: 16px 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  max-width: 300px;
+}

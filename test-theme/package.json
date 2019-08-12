@@ -1,0 +1,18 @@
+{
+  "name": "test-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
+  "license": "MIT",
+  "scripts": {
+    "develop-debug": "node --inspect-brk --no-lazy ../node_modules/gatsby/dist/bin/gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "gatsby": "^2.13.50",
+    "opensourcerepos-theme": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

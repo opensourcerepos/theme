@@ -1,0 +1,14 @@
+{
+  "name": "opensourcerepos-theme-workspace",
+  "private": true,
+  "version": "1.0.0.",
+  "license": "MIT",
+  "scripts": {
+    "develop": "yarn workspace test-theme develop",
+    "build": "yarn workspace test-theme build"
+  },
+  "workspaces": [
+    "opensourcerepos-theme",
+    "test-theme"
+  ]
+}

@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+import { Link } from "gatsby"
+import styles from './blog-list-item.module.css';
+import GithubIcon from './github.svg';
+
+class BlogListItem extends Component{
+  render(){
+    const { blog } = this.props;
+    console.log(blog)
+    return(
+      <div className={styles.wrapper}>
+        <div className={styles.repoName}>
+          <img src={GithubIcon} width="22" height="22"/> <a href="">{`${blog.frontmatter.repoOrganization}/${blog.frontmatter.repoName}`}</a>
+        </div>
+        <div className={styles.title}>
+          <Link to={blog.frontmatter.path}>{blog.frontmatter.title}</Link>
+        </div>
+        <div className={styles.excerpt}>
+          {blog.excerpt} 
+        </div>
+      </div>
+    )
+  }
+}
+
+export default BlogListItem;

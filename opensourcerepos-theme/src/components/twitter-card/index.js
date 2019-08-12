@@ -1,0 +1,1 @@
+export { default as TwitterCard } from './twitter-card';
