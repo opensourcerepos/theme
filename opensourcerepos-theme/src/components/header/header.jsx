@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import styles from './header.module.css';
 
 class Header extends Component{
@@ -24,7 +25,7 @@ class Header extends Component{
             <div className="my-lg-0">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active" id="navbar-newblog-link">
-                  <a href="#" className="btn btn-primary">New Blog</a>
+                  <Link to="/new-blog" className="btn btn-primary">New Blog</Link>
                 </li>
               </ul>
             </div>
