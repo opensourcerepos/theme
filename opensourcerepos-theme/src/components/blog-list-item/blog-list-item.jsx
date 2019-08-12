@@ -9,8 +9,13 @@ class BlogListItem extends Component{
     console.log(blog)
     return(
       <div className={styles.wrapper}>
-        <div className={styles.repoName}>
-          <img src={GithubIcon} width="22" height="22"/> <a href="">{`${blog.frontmatter.repoOrganization}/${blog.frontmatter.repoName}`}</a>
+        <div className="row d-flex justify-content-between">
+          <div className={styles.repoName}>
+            <img src={GithubIcon} width="22" height="22"/> <a href="">{`${blog.frontmatter.repoOrganization}/${blog.frontmatter.repoName}`}</a>
+          </div>
+          <div className={styles.timeToRead}>
+            {blog.timeToRead} min read
+          </div>
         </div>
         <div className={styles.title}>
           <Link to={blog.frontmatter.path}>{blog.frontmatter.title}</Link>

@@ -10,3 +10,10 @@
   margin-top: 8px;
   margin-bottom: 4px;
 }
+.repoName{
+  margin-left: 16px;
+}
+.timeToRead{
+  margin-right: 16px;
+  opacity: 0.7;
+}

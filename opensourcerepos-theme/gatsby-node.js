@@ -40,6 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
         fields {
           slug
         }
+        timeToRead
       }
     }
   }`)
@@ -51,7 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
   result.data.allMarkdownRemark.nodes.forEach((node) => {
     createPage({
-      path: node.frontmatter.path,
+      path: node.frontmatter.path || node.slug,
       component: path.resolve(`${__dirname}/src/pages/blog.js`),
       context: {
         // Data passed to context is available
