@@ -15,10 +15,10 @@ class Header extends Component{
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li>
-                <form className="form-inline my-2 my-lg-0" method="GET" action="/app/search">
+                {/* <form className="form-inline my-2 my-lg-0" method="GET" action="/app/search">
                   <input className="form-control mr-sm-2 custom-input-element" id="searchNavBar" name="repo" type="search" placeholder="Search repository" aria-label="Search"/>
                   <button className="btn my-2 my-sm-0 search-submit-button" type="submit">Search</button>
-                </form>
+                </form> */}
               </li>
             </ul>
 
