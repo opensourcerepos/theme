@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import styles from './blog.module.css';
+import { TableOfContents } from '../table-of-contents';
 
 class Blog extends Component{
   render(){
@@ -15,10 +16,8 @@ class Blog extends Component{
           <div className={styles.blog} dangerouslySetInnerHTML={{__html: data.html}}>
           </div>
         </div>
-        <div className="col-md-3">
-          <div className={styles.tableOfContents} dangerouslySetInnerHTML={{__html: data.tableOfContents}}>
-
-          </div>
+        <div className="col-md-3 mb-3">
+          <TableOfContents data={data.tableOfContents} />
         </div>
       </div>
     )
