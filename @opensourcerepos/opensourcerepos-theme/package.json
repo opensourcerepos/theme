@@ -8,10 +8,11 @@
     "theme",
     "blog"
   ],
+  "author": "Santosh G <santoshg.dev@gmail.com> (@__SantoshG)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opensourcerepos/theme.git",
+    "url": "https://github.com/opensourcerepos/theme.git",
     "directory": "themes/gatsby-theme-blog"
   },
   "homepage": "https://github.com/opensourcerepos/theme",
@@ -36,12 +37,5 @@
     "gatsby": "^2.13.13",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  },
-  "bugs": {
-    "url": "https://github.com/opensourcerepos/theme/issues"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Santosh G <santoshg.dev@gmail.com>"
+  }
 }

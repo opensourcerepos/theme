@@ -1,7 +1,7 @@
 // api call
 module.exports = {
   plugins: [{ 
-    resolve: `opensourcerepos-theme`, 
+    resolve: `@opensourcerepos/opensourcerepos-theme`, 
     options: {
       path: `${__dirname}/src/repository-blogs`,
     } 

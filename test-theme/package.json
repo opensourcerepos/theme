@@ -2,7 +2,7 @@
   "name": "test-theme",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
+  "author": "Santosh G <santoshg.dev@gmail.com> (@__SantoshG)",
   "license": "MIT",
   "scripts": {
     "develop-debug": "node --inspect-brk --no-lazy ../node_modules/gatsby/dist/bin/gatsby develop",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "gatsby": "^2.13.50",
-    "opensourcerepos-theme": "*",
+    "@opensourcerepos/opensourcerepos-theme": "*",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
