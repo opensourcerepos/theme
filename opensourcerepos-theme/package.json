@@ -31,7 +31,12 @@
     "gatsby": "^2.13.50",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
   },
   "peerDependencies": {
     "gatsby": "^2.13.13",
@@ -39,6 +44,6 @@
     "react-dom": "^16.8.6"
   },
   "scripts": {
-    "build": "gatsby build"
+    "build": "babel src --out-dir dist --copy-files"
   }
 }

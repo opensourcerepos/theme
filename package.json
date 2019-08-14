@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "develop": "yarn workspace test-theme develop",
+    "develop": "GATSBY_DEV=true yarn workspace test-theme develop",
     "build": "yarn workspace test-theme build"
   },
   "workspaces": [
-    "@opensourcerepos/opensourcerepos-theme",
+    "opensourcerepos-theme",
     "test-theme"
   ]
 }

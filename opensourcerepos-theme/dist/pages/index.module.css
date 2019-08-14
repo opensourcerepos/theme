@@ -1,0 +1,15 @@
+.col{
+  width: calc(100% - 320px)
+}
+.col300{
+  width: 300px;
+}
+@media all and (max-width: 600px){
+  .col{
+    width: 100%;
+  }
+
+  .col300{
+    margin: auto;
+  }
+}

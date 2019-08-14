@@ -1,0 +1,19 @@
+.sidebar{
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 8px 16px; 
+  margin-top: 16px;
+  font-size: 14px;
+}
+.ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.li{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 8px;
+}

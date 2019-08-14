@@ -45,19 +45,23 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   }`)
   console.log(result.data.allMarkdownRemark.nodes);
+  let basePath = `${__dirname}/dist/pages/`;
+  if(process.env.GATSBY_DEV){
+    basePath = `${__dirname}/src/pages/`;
+  }
   createPage({
     path: '/',
-    component: path.resolve(`${__dirname}/src/pages/index.js`),
+    component: path.resolve(`${basePath}/index.js`),
     context: result.data.allMarkdownRemark.nodes
   })
   createPage({
     path: '/new-blog',
-    component: path.resolve(`${__dirname}/src/pages/new-blog.js`)
+    component: path.resolve(`${basePath}/new-blog.js`)
   })
   result.data.allMarkdownRemark.nodes.forEach((node) => {
     createPage({
       path: node.frontmatter.path || node.slug,
-      component: path.resolve(`${__dirname}/src/pages/blog.js`),
+      component: path.resolve(`${basePath}/blog.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
