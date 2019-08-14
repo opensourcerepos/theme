@@ -29,11 +29,6 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
     "gatsby": "^2.13.50",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
@@ -44,7 +39,4 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "scripts": {
-    "build": "babel src --out-dir dist --copy-files"
-  }
 }
