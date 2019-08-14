@@ -1,7 +1,7 @@
 // api call
 module.exports = {
   plugins: [{ 
-    resolve: `@opensourcerepos/opensourcerepos-theme`, 
+    resolve: `@opensourcerepos/gatsby-theme-opensourcerepos`, 
     options: {
       path: `${__dirname}/src/repository-blogs`,
     } 

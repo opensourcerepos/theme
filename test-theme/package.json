@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "gatsby": "^2.13.50",
-    "@opensourcerepos/opensourcerepos-theme": "*",
+    "@opensourcerepos/gatsby-theme-opensourcerepos": "*",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

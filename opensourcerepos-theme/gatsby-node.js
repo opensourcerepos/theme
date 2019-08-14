@@ -45,10 +45,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   }`)
   console.log(result.data.allMarkdownRemark.nodes);
-  let basePath = `${__dirname}/dist/pages/`;
-  if(process.env.GATSBY_DEV){
-    basePath = `${__dirname}/src/pages/`;
-  }
+  let basePath = `${__dirname}/src/pages/`;
   createPage({
     path: '/',
     component: path.resolve(`${basePath}/index.js`),

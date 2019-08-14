@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "develop": "GATSBY_DEV=true yarn workspace test-theme develop",
+    "develop": "yarn workspace test-theme develop",
     "build": "yarn workspace test-theme build"
   },
   "workspaces": [
