@@ -1,6 +1,6 @@
 {
   "name": "@opensourcerepos/gatsby-theme-opensourcerepos",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Theme for opensourcerepos.com",
   "main": "index.js",
   "keywords": [

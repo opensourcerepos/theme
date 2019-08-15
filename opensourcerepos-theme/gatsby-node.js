@@ -58,7 +58,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.nodes.forEach((node) => {
     console.log("node.slug",node.fields.slug);
     createPage({
-      path: node.frontmatter.path || node.slug,
+      path: node.frontmatter.path || node.fields.slug,
       component: path.resolve(`${basePath}/blog.js`),
       context: {
         // Data passed to context is available
