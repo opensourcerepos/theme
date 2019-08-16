@@ -56,7 +56,6 @@ exports.createPages = async ({ graphql, actions }) => {
     component: path.resolve(`${basePath}/new-blog.js`)
   })
   result.data.allMarkdownRemark.nodes.forEach((node) => {
-    console.log("node.slug",node.fields.slug);
     createPage({
       path: node.frontmatter.path || node.fields.slug,
       component: path.resolve(`${basePath}/blog.js`),

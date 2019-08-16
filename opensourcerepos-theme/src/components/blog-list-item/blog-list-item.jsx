@@ -18,7 +18,7 @@ class BlogListItem extends Component{
           </div>
         </div>
         <div className={styles.title}>
-          <Link to={blog.frontmatter.path}>{blog.frontmatter.title}</Link>
+          <Link to={blog.frontmatter.path || blog.fields.slug}>{blog.frontmatter.title}</Link>
         </div>
         <div className={styles.excerpt}>
           {blog.excerpt} 
