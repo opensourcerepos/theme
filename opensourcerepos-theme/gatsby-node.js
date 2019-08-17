@@ -21,7 +21,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`query MyQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {
+      fields: [timeToRead]
+      order: ASC
+    }){
       nodes {
         html
         fileAbsolutePath
@@ -42,7 +45,7 @@ exports.createPages = async ({ graphql, actions }) => {
         timeToRead
       }
     }
-  }`)
+}`)
   console.log(result.data.allMarkdownRemark.nodes);
   let basePath = `${__dirname}/src/pages/`;
   createPage({
