@@ -1,7 +1,6 @@
 ---
 title: 'Understanding the source code of Redux (ReduxJS)'
 date: "2019-07-23"
-path: 'understanding-the-source-code-of-redux-redux-js'
 excerpt: 'We are going to look into the createStore file, and its functions like getState, dispatch, subscribe and replaceReducer.'
 versionControl: GitHub
 repositoryUrl: https://github.com/reduxjs/redux

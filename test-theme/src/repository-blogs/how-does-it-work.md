@@ -1,7 +1,6 @@
 ---
 title: 'Getting started with the code base of OpenSourceRepos'
 date: "2019-07-23"
-path: 'getting-started-with-the-code-base-of-open-source-repos-2'
 excerpt: 'Learn how to get started with the codebase of opensourcerepos and install all the dependencies.'
 versionControl: GitHub
 repositoryUrl: https://github.com/opensourcerepos/opensourcerepos

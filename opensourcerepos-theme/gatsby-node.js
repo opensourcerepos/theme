@@ -28,7 +28,6 @@ exports.createPages = async ({ graphql, actions }) => {
         frontmatter {
           title
           date(formatString: "MMMM DD, YYYY")
-          path
           versionControl
           repositoryUrl
           repoOrganization
