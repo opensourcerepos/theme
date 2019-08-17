@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`query MyQuery {
     allMarkdownRemark(sort: {
       fields: [timeToRead]
-      order: ASC
+      order: DESC
     }){
       nodes {
         html
