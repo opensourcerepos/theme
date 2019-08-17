@@ -10,12 +10,8 @@ module.exports = options => {
       }, {
         resolve: `gatsby-transformer-remark`,
         options: {
-          plugins: [`gatsby-remark-autolink-headers`],
-        },
-      }, {
-        resolve: `gatsby-transformer-remark`,
-        options: {
           plugins: [
+            `gatsby-remark-autolink-headers`,
             {
               resolve: `gatsby-remark-prismjs`,
               options: {
