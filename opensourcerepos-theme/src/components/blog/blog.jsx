@@ -13,6 +13,9 @@ class Blog extends Component{
           <meta name="description" content={data.excerpt} />
         </Helmet>
         <div className="col-md-9">
+          <div className={styles.blog}>
+          <h1>{data.frontmatter.title}</h1>
+          </div>
           <div className={styles.blog} dangerouslySetInnerHTML={{__html: data.html}}>
           </div>
         </div>
