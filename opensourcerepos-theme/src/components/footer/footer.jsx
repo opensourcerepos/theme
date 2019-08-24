@@ -16,7 +16,7 @@ class Footer extends Component{
     <div class="col-md-8 mt-md-0 mt-3">
 
       <h5>About</h5>
-      <p>Open source repos is a open source project to make the developers understand the codebase and architecture of the open source projecs. <a href="/app/about" target="_blank">Read more</a></p>
+      <p>Open source repos is a open source project to make the developers understand the codebase and architecture of the open source projecs. <a href="/about" target="_blank">Read more</a></p>
 
     </div>
 
