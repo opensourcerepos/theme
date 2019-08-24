@@ -6,7 +6,6 @@ import GithubIcon from './github.svg';
 class BlogListItem extends Component{
   render(){
     const { blog } = this.props;
-    console.log(blog)
     return(
       <div className={styles.wrapper}>
         <div className="row d-flex justify-content-between">
