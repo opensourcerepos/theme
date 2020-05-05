@@ -18,7 +18,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions, options }) => {
   const { createPage } = actions
   const result = await graphql(`query MyQuery {
-    allMarkdownRemark{
+    allMarkdownRemark(sort: {
+      fields: [frontmatter___date]
+      order: DESC
+    }){
       nodes {
         html
         fileAbsolutePath
