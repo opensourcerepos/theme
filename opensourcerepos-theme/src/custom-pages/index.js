@@ -10,13 +10,13 @@ import { Footer } from '../components/footer';
 class IndexPage extends Component {
 
   render(){
-    const { pageContext } = this.props;
+    const { data } = this.props.pageContext;
     return <React.Fragment>
       <Header />
       <div className="container-fluid">
         <div className="row">
           <div className={styles.col}>
-            <BlogList data={pageContext} />
+            <BlogList data={data} />
           </div>
           <div className={styles.col300}>
             {/* <BlogsSidebar /> */}
