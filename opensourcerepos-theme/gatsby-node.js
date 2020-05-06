@@ -43,11 +43,13 @@ exports.createPages = async ({ graphql, actions, options }) => {
       }
     }
 }`)
-  let basePath = `${__dirname}/src/pages/`;
+  let basePath = `${__dirname}/src/custom-pages`;
   createPage({
     path: '/',
     component: path.resolve(`${basePath}/index.js`),
-    context: result.data.allMarkdownRemark.nodes
+    context: {
+      data: result.data.allMarkdownRemark.nodes
+    }
   })
   createPage({
     path: '/new-blog',
