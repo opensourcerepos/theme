@@ -3,7 +3,6 @@ import { map, get, isUndefined, filter } from 'lodash';
 import {Header} from '../components/header';
 import { BlogList } from '../components/blog-list';
 import { TwitterCard } from '../components/twitter-card';
-import { BlogsSidebar } from '../components/blogs-sidebar';
 import styles from './index.module.css';
 import { Footer } from '../components/footer';
 
