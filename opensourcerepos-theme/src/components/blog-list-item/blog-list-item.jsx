@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby"
 import styles from './blog-list-item.module.css';
-import GithubIcon from './github.svg';
+import GithubIcon from '../../../assets/github.svg';
 
 class BlogListItem extends Component{
   render(){
