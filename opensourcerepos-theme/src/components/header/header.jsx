@@ -25,7 +25,7 @@ class Header extends Component{
             <div className="my-lg-0">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active" id="navbar-newblog-link">
-                  <Link to="/new-blog" className="btn btn-primary">New Blog</Link>
+                  <Link to="/new-blog" className="btn btn-primary btn-sm">New Blog</Link>
                 </li>
               </ul>
             </div>

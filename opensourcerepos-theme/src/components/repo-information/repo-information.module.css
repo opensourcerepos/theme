@@ -1,0 +1,25 @@
+.header{
+  border-bottom: 1px solid #d1d5db;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+}
+
+.headertitle{
+  font-size: 18px;
+}
+
+.wrapper{
+  border: 1px solid #d1d5db;
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 16px;
+}
+.reponame{
+  margin-top: 16px;
+}
+.excerpt{
+  margin-top: 16px;
+}
